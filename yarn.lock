@@ -5683,6 +5683,11 @@ internal-slot@^1.0.2:
     has "^1.0.3"
     side-channel "^1.0.2"
 
+intersection-observer@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.11.0.tgz#f4ea067070326f68393ee161cc0a2ca4c0040c6f"
+  integrity sha512-KZArj2QVnmdud9zTpKf279m2bbGfG+4/kn16UU0NL3pTVl52ZHiJ9IRNSsnn6jaHrL9EGLFM5eWjTx2fz/+zoQ==
+
 ip-regex@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-2.1.0.tgz#fa78bf5d2e6913c911ce9f819ee5146bb6d844e9"
@@ -11309,6 +11314,11 @@ worker-rpc@^0.1.0:
   integrity sha512-P1WjMrUB3qgJNI9jfmpZ/htmBEjFh//6l/5y8SD9hg1Ef5zTTVVoRjTrTEzPrNBQvmhMxkoTsjOXN10GWU7aCg==
   dependencies:
     microevent.ts "~0.1.1"
+
+wouter@^2.5.3:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/wouter/-/wouter-2.5.3.tgz#1bfb32590e4e46834d3155592f95926847706cb3"
+  integrity sha512-Df84mO4GJ4rb6S+HykH1phFoo5iiY9BtYa/PszxJIhu/LWqzHl2zfcXCvKm81qvlqSDTbwd3DI368enGX2ZRJw==
 
 wrap-ansi@^5.1.0:
   version "5.1.0"
