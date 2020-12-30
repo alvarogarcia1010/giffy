@@ -33,7 +33,7 @@ export default function useGifs({keyword} = {keyword: null})
         setLoadingNextPage(false)
       })
 
-  }, [keywordToUse, page])
+  }, [keywordToUse, page, setGifs])
 
   return {loading, loadingNextPage, gifs, setPage}
 }
