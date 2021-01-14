@@ -29,5 +29,5 @@ export default function useSingleGif({id})
 
   }, [gif, id])
 
-  return {gif}
+  return {gif, loading, isError}
 }
