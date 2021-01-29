@@ -1,6 +1,7 @@
 import React from 'react'
 import useUser from 'hooks/useUser'
 import { useLocation } from 'wouter'
+import './fav.css'
 
 const Fav = ({id}) => {
   const {isLogged} = useUser()
@@ -12,7 +13,7 @@ const Fav = ({id}) => {
   }
 
   return (
-    <button onClick={handleClick}>
+    <button className="gif-fav" onClick={handleClick}>
       <span aria-label='Fav gif' role='img'>❤</span>
     </button>
   )

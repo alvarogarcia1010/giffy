@@ -11,10 +11,12 @@ export default function useUser ()
     setState({loading: true, error: false})
     loginService({username, password})
       .then(jwt => {
+        window.sessionStorage.setItem('jwt', jwt)
         setState({loading: false, error: false})
         setJwt(jwt)
       })
       .catch(err => {
+        window.sessionStorage.removeItem('jwt')
         setState({loading: false, error: true})
         console.log(err)
       })

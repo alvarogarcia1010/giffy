@@ -1,14 +1,23 @@
-import React, { useState } from 'react'
+import React, {useState} from "react";
 
-export const UserContext = React.createContext({})
+export const UserContext = React.createContext({});
 
-export function UserContextProvider ({children}) {
-  const [jwt, setJwt] = useState(null)
-  
-  return <UserContext.Provider value={{jwt, setJwt}}>
+export function UserContextProvider({children}) {
+  const [favs, setFavs] = useState([]);
+  const [jwt, setJwt] = useState(() => window.sessionStorage.getItem("jwt"));
+
+  return (
+    <UserContext.Provider
+      value={{
+        favs,
+        jwt,
+        setFavs,
+        setJwt
+      }}
+    >
       {children}
-  </UserContext.Provider>
-  
+    </UserContext.Provider>
+  );
 }
 
-export default UserContext
+export default UserContext;
