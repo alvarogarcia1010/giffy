@@ -17,8 +17,10 @@ const Fav = ({id}) => {
   const [label, emoji] = isFaved? ["Remove fav", "❌"] : ["Add fav", "❤"]
 
   return (
-    <button className="gif-fav" onClick={handleClick}>
-      <span aria-label={label} role='img'>{emoji}</span>
+    <button className="gf-Fav" onClick={handleClick}>
+      <span aria-label={label} role="img">
+        {emoji}
+      </span>
     </button>
   )
 }

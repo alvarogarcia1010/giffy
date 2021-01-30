@@ -1,14 +1,14 @@
 .Gif {
   --gifShadow-size : var(--gridList-gap, 6px);
-  position: relative;
   margin-bottom: .5em;
+  position: relative;
 }
 
 .Gif-buttons {
-  position:absolute;
-  top: 16px;
-  right: 16px;
-  z-index: 10;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
 }
 
 .Gif-link {
@@ -22,7 +22,7 @@
 .Gif h4 {
   background: rgba(0, 0, 0, .3);
   bottom: 0;
-  font-size: 18px;
+  font-size: 12px;
   color: #fff;
   margin: 0;
   position: absolute;
@@ -30,6 +30,22 @@
 
 .Gif img {
   width: 100%;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+i {
+  font-size: 80px;
+}
+
+.Gif {
+  margin-bottom: 0;
+}
+
+.Gif, .Gif-link {
   height: 100%;
+}
+.Gif-link img {
+  height: inherit;
   object-fit: cover;
 }

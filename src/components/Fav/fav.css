@@ -1,5 +1,5 @@
-.gif-fav {
-  background: rgba(255,172,172,0.3);
+.gf-Fav {
+  background: rgba(255, 172, 172, .3);
   border: 0;
   border-radius: 100px;
   cursor: pointer;
@@ -8,11 +8,11 @@
   transition: all .3s ease;
 }
 
-.gif-fav:hover {
-  background: rgba(255,172,172,0.8);
+.gf-Fav:hover {
+  background: rgba(255, 172, 172, .8);
 }
 
-.gif-fav span {
+.gf-Fav span {
   display: block;
-  width: 18px;
+  width: 20px;
 }
