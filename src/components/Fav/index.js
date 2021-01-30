@@ -4,17 +4,21 @@ import { useLocation } from 'wouter'
 import './fav.css'
 
 const Fav = ({id}) => {
-  const {isLogged} = useUser()
+  const {isLogged, addFav, favs} = useUser()
   const [, navigate] = useLocation()
+
+  const isFaved = favs.some(favId => favId === id)
 
   const handleClick = () => {
     if(!isLogged) return navigate('/login')
-    console.log(id)
+    addFav({id})
   }
+
+  const [label, emoji] = isFaved? ["Remove fav", "❌"] : ["Add fav", "❤"]
 
   return (
     <button className="gif-fav" onClick={handleClick}>
-      <span aria-label='Fav gif' role='img'>❤</span>
+      <span aria-label={label} role='img'>{emoji}</span>
     </button>
   )
 }
