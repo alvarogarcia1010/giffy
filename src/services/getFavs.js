@@ -1,12 +1,12 @@
 const ENDPOINT = 'http://localhost:8000'
 
-export default function addFav({ id, jwt}) 
+export default function getFavs({ jwt}) 
 {
   return new Promise(function(resolve, reject) { 
     setTimeout(resolve, 500); 
   })
   .then(function() { 
-      return id
+      return ["PpeGK6edBWAxi", "YzU8NQXqtIKqc"]
   }); 
   
   // return fetch(`${ENDPOINT}/fav/${id}`, {
