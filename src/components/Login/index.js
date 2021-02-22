@@ -3,7 +3,7 @@ import useLocation from 'wouter/use-location'
 import useUser from 'hooks/useUser'
 import './login.css'
 
-const Login = props => {
+const Login = ({onLogin}) => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [, setLocation] = useLocation()
@@ -15,8 +15,11 @@ const Login = props => {
   }
 
   useEffect(() => {
-    if(isLogged) setLocation('/')
-  }, [isLogged])
+    if(isLogged) {
+      setLocation('/')
+      onLogin && onLogin()
+    }
+  }, [isLogged, onLogin])
 
   return (
     <div>

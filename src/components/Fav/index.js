@@ -28,7 +28,7 @@ const Fav = ({id}) => {
       </button>
       {showModal && (
         <Modal onClose={() => setShowModal(false)}>
-          <Login />
+          <Login onLogin={() => setShowModal(false)} />
         </Modal>
       )}
     </>
