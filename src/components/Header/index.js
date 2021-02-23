@@ -21,7 +21,10 @@ const Header = props => {
     <header className='gf-header'>
       {isLogged ?
         <button onClick={handleLogoutClick}>Logout</button> :
-        <Link to="/login">Login</Link>
+        <>
+          <Link to="/login">Login</Link>
+          <Link to="/register">Registrarte</Link>
+        </>
       }
     </header>
   )
