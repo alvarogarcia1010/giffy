@@ -5,6 +5,7 @@ import Login from 'pages/Login'
 import Register from 'pages/Register'
 import Detail from 'pages/Detail'
 import Home from 'pages/Home'
+import ErrorPage from 'pages/ErrorPage'
 import SearchResults from 'pages/SearchResults'
 import { UserContextProvider } from 'contexts/UserContext'
 import {GifsContextProvider} from 'contexts/GifsContext'
@@ -25,7 +26,7 @@ function App() {
               <Route path="/gif/:id" component={Detail}/>
               <Route path="/login" component={Login}/>
               <Route path="/register" component={Register}/>
-              <Route component={() => <h1>404 Error!</h1>}/>
+              <Route component={ErrorPage} path="/:rest*" />
             </Switch>
           </GifsContextProvider>
         </section>
