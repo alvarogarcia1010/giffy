@@ -5,6 +5,7 @@ import React from 'react'
 import SearchForm from "components/SearchForm";
 import { Helmet } from "react-helmet";
 import { jsx, css } from '@emotion/react';
+import Button from 'components/Button';
 
 const gifsErrors = ['d2jjuAZzDSVLZ5kI', 'Bp3dFfoqpCKFyXuSzP', 'hv5AEBpH3ZyNoRnABG', 'hLwSzlKN8Fi6I'];
 
@@ -58,7 +59,7 @@ const ErrorPage = () => {
             <span css={codeErrorStyles}>404</span>
             <span css={msgErrorStyles}>Sometimes gettings lost isn't that bad</span>
             <img css={gifErrorStyles} src={randomImage()} alt="alt-page-404"/>
-            <a href='/'>Go back home</a>
+            <Button href='/'>Go back home</Button>
         </div>
       </div>
     </>
